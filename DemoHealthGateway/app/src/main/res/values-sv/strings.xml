@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demo Health Gateway</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="agent_config_failed">Agenten kunde inte konfigureras.</string>
+    <string name="devices">Enheter</string>
+    <string name="health_service_disconnected">Hälsotjänsten kopplades ner.</string>
+    <string name="heart_rate">Puls:</string>
+    <string name="ready_to_receive">Redo att ta emot inkommande anslutningar</string>
+    <string name="receiving_measurement">Tar emot mätvärde…</string>
+    <string name="saturation">Blod/syre-mättnad:</string>
+    <string name="settings_patient_name">Patientidentifiering</string>
+    <string name="settings_save">Spara inställningar</string>
+    <string name="show_device">Använd vald enhet</string>
+    <string name="warning_choose_device">Var god välj en enhet först</string>
+    <string name="title_activity_pulse_oximeter">Pulsoximeter</string>
+    <string name="health_device_is_no_health_device">Din hälsoenhet är ingen hälsoenhet.</string>
+    <string name="no_measurement_yet">Det finns inget mätvärde att ladda upp..</string>
+    <string name="upload_error">Något gick fel vid uppladdningsförsöket..</string>
+    <string name="upload_fail">Uppladdningen av mätvärdet misslyckades.</string>
+    <string name="upload_interrupted">Uppladdningen avbröts..</string>
+    <string name="upload_success">Mätvärdesuppladdningen lyckades!</string>
+    <string name="upload_timeout">Uppladdningen kunde inte slutföras inom tidsgränsen..</string>
+    <string name="action_upload">Ladda upp mätvärden</string>
+    <string name="uploading_measurements">Laddar upp mätvärden %1$d/%2$d</string>
+    <string name="uploading_measurements_start">Laddar upp mätvärden</string>
+    <string name="seed_database">Fyll databasen</string>
+    <string name="seed_amount">Antal nya element:</string>
+    <string name="seed_button">Generera!</string>
+    <string name="seeding_done">%1$d element tillagda!</string>
+    <string name="settings_saved">Inställningar sparade!</string>
+    <string name="license_text">Den här applikationen utvecklades som en del i ett examensarbete vid Chalmers tekniska högskola i samarbete med Ascom Wireless Solutions, och är licensierad under GNU GPL 2, © Andreas Svanström. Den här applikationen använder biblioteket Antidote © Signove Tecnologia S/A, som är licensierad enligt GNU LGPL 2.1.</string>
+    <string name="lgpl_button">Visa LGPL 2.1</string>
+    <string name="license">Licens</string>
+    <string name="settings_automatic_program_flow">Automatiskt programflöde</string>
+    <string name="gpl_button">Visa GPL 2</string>
+    <string name="title_activity_settings">Inställningar</string>
+    <string name="title_activity_license">Licensinformation</string>
+</resources>

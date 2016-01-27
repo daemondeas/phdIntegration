@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demo Health Gateway</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="agent_config_failed">Der Agent konnte nicht konfiguriert werden.</string>
+    <string name="devices">Geräte</string>
+    <string name="health_service_disconnected">Der Gesundheitsdienst ist ausgeschaltet worden.</string>
+    <string name="heart_rate">Puls:</string>
+    <string name="ready_to_receive">Bereit ankommende Verbindungen zu erhalten</string>
+    <string name="receiving_measurement">Erhält Messung…</string>
+    <string name="saturation">Blut/Sauerstoff-Sättigung:</string>
+    <string name="settings_patient_name">Patientenkennung</string>
+    <string name="settings_save">Einstellungen speichern</string>
+    <string name="show_device">Benutze gewählte Gerät</string>
+    <string name="title_activity_pulse_oximeter">Pulsoximeter</string>
+    <string name="warning_choose_device">Bitte zuerst ein Gerät wählen</string>
+    <string name="health_device_is_no_health_device">Dein Gesundheitsgerät ist kein Gesundheitsgerät.</string>
+    <string name="no_measurement_yet">Keine Messung hochzuladen..</string>
+    <string name="upload_error">Etwas ist mit der Hochladung falsch gelaufen..</string>
+    <string name="upload_fail">Messung ist nicht hochgeladet geworden.</string>
+    <string name="upload_interrupted">Hochladung wurde unterbrochen..</string>
+    <string name="upload_success">Die Messung ist jetzt hochgeladet!</string>
+    <string name="upload_timeout">Die Hochladung hat ihre Zeitgrenze übergeschritten..</string>
+    <string name="action_upload">Hochlade die Messungen</string>
+    <string name="uploading_measurements">Lädt Messungen hoch %1$d/%2$d</string>
+    <string name="uploading_measurements_start">Lädt Messungen hoch</string>
+    <string name="seed_database">Fülle die Datenbank</string>
+    <string name="seed_amount">Anzahl neue Elemente:</string>
+    <string name="seed_button">Generiere!</string>
+    <string name="seeding_done">%1$d Elemente eingefügt!</string>
+    <string name="settings_saved">Einstellungen gespeichert!</string>
+    <string name="license_text">Diese Applikation ist als Teil einer Abschlussarbeit bei Chalmers Technische Universität in Zusammenarbeit mit Ascom Wireless Solutions entwickelt, und ist unter GNU GPL 2 lizenziert, © Andreas Svanström. Diese Applikation benutzt die Bibliothek Antidote © Signove Tecnologia S/A, die unter GNU LGPL 2.1 lizenziert ist.</string>
+    <string name="lgpl_button">Zeige LGPL 2.1</string>
+    <string name="license">Lizenz</string>
+    <string name="settings_automatic_program_flow">Automatische Programmablauf</string>
+    <string name="gpl_button">Zeige GPL 2</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="title_activity_license">Lizenzinformation</string>
+</resources>
