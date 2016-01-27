@@ -1,0 +1,57 @@
+﻿<div id="body">
+    <ul id="measurements"></ul>
+</div>
+
+<form id="saveMeasurementForm" method="POST" action="odata/PulseOximetryMeasurements">
+    <h3>Insert a new measurement</h3>
+    <p>
+        <label for="bloodOxygenSaturation">Blood oxygen saturation:</label>
+        <input type="number" name="BloodOxygenSaturation" />
+    </p>
+    <p>
+        <label for="bloodOxygenSaturationUnit">Blood oxygen saturation unit:</label>
+        <input type="text" name="BloodOxygenSaturationUnit" />
+    </p>
+    <p>
+        <label for="heartRate">Heart rate:</label>
+        <input type="number" name="HeartRate" />
+    </p>
+    <p>
+        <label for="heartRateUnit">Heart rate unit:</label>
+        <input type="text" name="HeartRateUnit" />
+    </p>
+    <p>
+        <label for="patientId">Patient identification:</label>
+        <input type="text" name="PatientIdentification" />
+    </p>
+    <p>
+        <label for="timeStamp">Timestamp:</label>
+        <input type="datetime-local" name="TimeStamp" />
+    </p>
+    <input type="submit" id="saveMeasurement" value="Save" />
+</form>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(function() {
+            $.getJSON('odata/PulseOximetryMeasurements', function(measurementsJsonPayLoad) {
+                $(measurementsJsonPayLoad).each(function(addMeasurement) {
+                    $(addMeasurement).each(function(i, item) {
+                        $('#measurements').append('<li>' + item.Id + ': ' + item.PatientIdentification + '</li>');
+                    });
+                });
+            });
+        });
+
+/*        $('#saveMeasurement').click(function() {
+            $.post("api/pulseoximetry",
+                $("#saveMeasurementForm").serialize(),
+                function(value) {
+                    $('#measurements').append('<li>' + value.Id + ': ' + value.PatientIdentification + '</li>');
+                },
+                "json"
+            );
+        });*/
+    </script>
+}
