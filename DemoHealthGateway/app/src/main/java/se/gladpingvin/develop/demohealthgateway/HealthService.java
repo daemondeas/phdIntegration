@@ -28,7 +28,7 @@ import java.util.List;
  */
 public class HealthService extends Service {
     private String TAG = "HSS";
-    private String PATH_PREFIX = "/se/ascom/seprjasv/ascomhealthgateway/device/";
+    private String PATH_PREFIX = "/se/gladpingvin/develop/demohealthgateway/device/";
     private Handler handler;
     private JNIBridge antidote;
 
