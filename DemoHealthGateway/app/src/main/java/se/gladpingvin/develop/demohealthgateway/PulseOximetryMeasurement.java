@@ -260,8 +260,7 @@ public class PulseOximetryMeasurement {
                 bloodOxygenSaturationUnit.equals(measurement.getBloodOxygenSaturationUnit()) &&
                 heartRateUnit.equals(measurement.getHeartRateUnit()) &&
                 patient.equals(measurement.getPatient()) &&
-                AntidoteHelper.timeStampAsHtmlString(timeStamp).substring(0, 16).equals(
-                        AntidoteHelper.timeStampAsHtmlString(measurement.getTimeStamp())
-                                .substring(0, 16));
+                AntidoteHelper.timeStampAsHtmlString(timeStamp).equals(
+                        AntidoteHelper.timeStampAsHtmlString(measurement.getTimeStamp()));
     }
 }

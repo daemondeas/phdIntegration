@@ -333,7 +333,7 @@ public class AntidoteHelper {
     }
 
     /**
-     * Converts a String of the html datetime-local format (YYYY-MM-DDTHH:MM) into a
+     * Converts a String of the html datetime-local format (YYYY-MM-DDTHH:MM:SS) into a
      * GregorianCalendar
      * @param time the String to convert
      * @return a GregorianCalendar corresponding to time, should time not be of the correct format,
@@ -345,6 +345,7 @@ public class AntidoteHelper {
         int day;
         int hour;
         int minute;
+        int second;
 
         try {
             year = Integer.parseInt(time.substring(0, 4));
@@ -352,22 +353,23 @@ public class AntidoteHelper {
             day = Integer.parseInt(time.substring(8, 10));
             hour = Integer.parseInt(time.substring(11, 13));
             minute = Integer.parseInt(time.substring(14, 16));
+            second = Integer.parseInt(time.substring(17, 19));
         } catch (IndexOutOfBoundsException ioobe) {
-            Log.v(TAG, "Timestamp string from database was too short.");
+            Log.v(TAG, "Timestamp string from web service was too short.");
             Log.v(TAG, time);
             return new GregorianCalendar();
         } catch (NumberFormatException nfe) {
-            Log.v(TAG, "Timestamp string from database contained non-numbers.");
+            Log.v(TAG, "Timestamp string from web service contained non-numbers.");
             return new GregorianCalendar();
         }
 
         month--;
-        return new GregorianCalendar(year, month, day, hour, minute);
+        return new GregorianCalendar(year, month, day, hour, minute, second);
     }
 
     /**
      * Converts a GregorianCalendar into a String of the html datetime-local format
-     * (YYYY-MM-DDTHH:MM)
+     * (YYYY-MM-DDTHH:MM:SS)
      * @param timeStamp the GregorianCalendar to convert
      * @return a String representation of timeStamp in html datetime-local format
      */
@@ -376,7 +378,8 @@ public class AntidoteHelper {
                 niceNumber(timeStamp.get(Calendar.MONTH) + 1) + '-' +
                 niceNumber(timeStamp.get(Calendar.DAY_OF_MONTH)) + 'T' +
                 niceNumber(timeStamp.get(Calendar.HOUR_OF_DAY)) + ':' +
-                niceNumber(timeStamp.get(Calendar.MINUTE));
+                niceNumber(timeStamp.get(Calendar.MINUTE)) + ':' +
+                niceNumber(timeStamp.get(Calendar.SECOND));
     }
 
     /**
